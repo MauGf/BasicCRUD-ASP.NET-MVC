@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Inventario_TiendaCHocModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Empleado">
+    <Key>
+      <PropertyRef Name="IdEmpleado" />
+    </Key>
+    <Property Name="IdEmpleado" Type="int" Nullable="false" />
+    <Property Name="Nomempleado" Type="nchar" MaxLength="10" />
+    <Property Name="Departamento" Type="nchar" MaxLength="10" />
+    <Property Name="Telefono" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Table">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Name" Type="char" MaxLength="50" />
+    <Property Name="Descripcion" Type="char" MaxLength="20" />
+    <Property Name="Cantidad" Type="nchar" MaxLength="10" />
+    <Property Name="precio" Type="nchar" MaxLength="10" />
+    <Property Name="stockMax" Type="nchar" MaxLength="10" />
+    <Property Name="stockMin" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityContainer Name="Inventario_TiendaCHocModelStoreContainer">
+    <EntitySet Name="Empleado" EntityType="Self.Empleado" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Table" EntityType="Self.Table" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

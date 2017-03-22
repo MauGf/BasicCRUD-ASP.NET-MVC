@@ -1,6 +1,6 @@
 # BasicCRUD-ASP.NET-MVC
-Basic Implementing  CRUD  with the  Entity Framework in ASP.NET MVC Application 
-Create, read, update, and delete data from an inventory table.
+Basic Implementing  CRUD  with the  Entity Framework in ASP.NET MVC Application. 
+Create, read, update and delete data from an inventory table.
 
 ![captura1](https://cloud.githubusercontent.com/assets/25255847/24184678/ce33c700-0e94-11e7-8038-51024634fe57.PNG)
 
